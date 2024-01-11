@@ -11,7 +11,7 @@ class Program
         5)BinarySearch  +
 
     Level 2:
-        6)ShellSort     
+        6)ShellSort     + 
         7)QuickSort        
         8)Stack        
         9)Queue        
@@ -55,7 +55,7 @@ class Program
         Худший случай: O(n^2), возникает в случае, когда массив уже отсортирован в обратном порядке;
         */
 
-        //InsertionSort2.Start(10);
+        //InsiretionSort2.Start(10);
 
         /*
         SELECTION SORT:
@@ -96,7 +96,6 @@ class Program
         */
 
         //ShakerSort2.Start(10);
-
         /*
         BINARY SEARCH:
         | ОПИСАНИЕ |
@@ -116,7 +115,7 @@ class Program
         O(log (n))
         */
 
-        //BinarySearch.Start(20);
+        //BinarySearch2.Start(20);
 
         /*
         SHELL SORT:
@@ -136,5 +135,11 @@ class Program
         */
 
         //ShellSort.Start(10);
+
+        int[] array = ShellSort.GenerateRandomArray(10);
+        Console.WriteLine("| Quick Sort |");
+        Console.WriteLine($"Исходный массив массив: [ {string.Join(" ", array)} ]");
+        int[] result = QuickSort.Start(array, 0, array.Length-1);
+        Console.WriteLine($"Отсортированный массив: [ {string.Join(" ", result)} ]");
     }
 }

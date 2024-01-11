@@ -27,9 +27,8 @@ namespace AlgExam
         }
         public static void Sort(int[] array)
         {
-            int left = 0,
-            right = array.Length - 1,
-            count = 0;
+            int left = 0;
+            int right = array.Length - 1;
 
             while (left < right)
             {
@@ -37,7 +36,6 @@ namespace AlgExam
                 for (int i = left; i < right; i++)
                 {
                     Console.WriteLine($"Просматриваем элементы {array[i]} и {array[i + 1]}");
-                    count++;
                     if (array[i] > array[i + 1])
                     {
                         Console.WriteLine($"Пререставляем элементы {array[i]} и {array[i + 1]}");
@@ -52,7 +50,6 @@ namespace AlgExam
                 for (int i = right; i > left; i--)
                 {
                     Console.WriteLine($"Просматриваем элементы {array[i]} и {array[i - 1]}");
-                    count++;
                     if (array[i - 1] > array[i])
                     {
                         Console.WriteLine($"Пререставляем элементы {array[i]} и {array[i - 1]}");
