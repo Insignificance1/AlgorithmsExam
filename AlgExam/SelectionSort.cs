@@ -10,7 +10,8 @@ namespace AlgExam
     {
         public static void Start(int size)
         {
-            int[] array = GenerateRandomSort(size);
+            //int[] array = GenerateRandomSort(size);
+            int[] array = { 62, 51, 58, 37, 74, 9, 80, 81, 90, 79 };
             Console.WriteLine("| Selection Sort |");
             Console.WriteLine("Исходный массив: ");
             Print(array);
